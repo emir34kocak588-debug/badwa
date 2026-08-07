@@ -1,3 +1,10 @@
+const http = require('http');
+
+http.createServer((req, res) => {
+  res.write("Bot 7/24 aktif!");
+  res.end();
+}).listen(process.env.PORT || 3000);
+
 const fs = require('fs');
 const path = require('path');
 const { Client, GatewayIntentBits, Partials, Collection } = require('discord.js');
